@@ -1,8 +1,6 @@
 import React from 'react'
 
 import Nav from 'react-bootstrap/Nav'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
 
 import './Nav.css'
 

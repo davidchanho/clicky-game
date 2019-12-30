@@ -19,14 +19,10 @@ class Game extends Component {
 	}
 
 	// increase score when user clicks on card
-	handleIncrement = id => {
+	handleIncrement = p => {
 		let { score, pokemon } = this.state
 
-		pokemon.forEach(p => {
-			if (id === p.id) {
-				p.clicked = true
-			}
-		})
+		p.clicked = true
 
 		this.setState({
 			score: score + 1,
@@ -51,7 +47,9 @@ class Game extends Component {
 		const { pokemon } = this.state
 		pokemon.forEach(p => {
 			if (id === p.id) {
-				p.clicked ? this.handleReset() : this.handleIncrement(id)
+				p.clicked
+					? this.handleReset()
+					: this.handleIncrement(p)
 			}
 		})
 	}
