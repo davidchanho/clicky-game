@@ -4,11 +4,11 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import { Navbar, CardColumn, Cards, Img } from '../../'
+import { Navbar, CardColumn, Cards, Img } from 'components'
 
-import { shuffle } from '../../../util/helper'
+import { shuffle } from 'util/helper'
 
-import pokemon from '../../../model/pokemon.json'
+import pokemon from 'model/pokemon.json'
 
 class Game extends Component {
 	state = {
