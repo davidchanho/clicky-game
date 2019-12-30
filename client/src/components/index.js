@@ -1,0 +1,7 @@
+export { Img } from './Atoms/Image'
+export { Cards } from './Molecules/Card'
+export { CardColumn } from './Organisms/Columns'
+export { Footer } from './Organisms/Footer'
+export { Navbar } from './Organisms/Nav'
+export { Game } from './Pages'
+// export { Templates } from './Templates'

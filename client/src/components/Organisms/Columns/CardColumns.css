@@ -1,0 +1,6 @@
+.cardColumns {
+	column-count: 4;
+	height: 70vh;
+	width: 30vw;
+	margin: 10vh auto;
+}
