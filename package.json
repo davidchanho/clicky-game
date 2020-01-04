@@ -1,5 +1,6 @@
 {
   "name": "mern",
+  "homepage": "https://davidchanho.github.com/clicky-game",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -10,7 +11,9 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +23,9 @@
   },
   "dependencies": {
     "express": "^4.16.3",
-    "if-env": "^1.0.4"
+    "gh-pages": "^2.1.1",
+    "if-env": "^1.0.4",
+    "react": "^16.12.0",
+    "react-router-dom": "^5.1.2"
   }
 }

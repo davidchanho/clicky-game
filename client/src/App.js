@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { HashRouter, Route, Link } from 'react-router-dom'
 
-import { Game, Footer } from './components'
+import { Game } from './components'
 
 import './App.css'
 
-function App() {
-	return (
-		<div id='app'>
-			<Game />
-			<Footer />
-		</div>
-	)
+class App extends Component {
+  render() {
+    return (
+      <HashRouter basename='*'>
+        <div id='app'>
+          <Route exact path='*' component={Game} />
+        </div>
+      </HashRouter>
+    )
+  }
 }
 
 export default App

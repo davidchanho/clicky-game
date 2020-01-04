@@ -1,10 +1,12 @@
 {
   "name": "mern",
+  "homepage": "https://davidchanho.github.com/clicky-game",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
     "react": "^16.6.3",
     "react-bootstrap": "^1.0.0-beta.16",
