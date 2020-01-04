@@ -1,6 +1,5 @@
 {
   "name": "mern",
-  "homepage": "https://davidchanho.github.com/clicky-game",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,9 +10,7 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
