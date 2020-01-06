@@ -2,9 +2,9 @@ import React from 'react'
 
 import Nav from 'react-bootstrap/Nav'
 
-import './Nav.css'
+import './styles.scss'
 
-function Navbar({ children }) {
+export function Navbar({ children }) {
 	return (
 		<Nav className='navbar'>
 			<h3 className='navbar-brand' href='/'>
@@ -17,5 +17,3 @@ function Navbar({ children }) {
 		</Nav>
 	)
 }
-
-export { Navbar }

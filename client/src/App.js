@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { HashRouter, Route, Link } from 'react-router-dom'
 
-import { Game } from './components'
+import Game from './Pages'
 
 import './App.css'
 

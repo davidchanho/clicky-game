@@ -4,13 +4,13 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import { Navbar, CardColumn, Cards, Footer, Img } from 'components'
+import { Navbar, Columns, Cards, Footer, Img } from 'components'
 
 import { shuffle } from 'util/helper'
 
 import pokemon from 'model/pokemon.json'
 
-class Game extends Component {
+export default class Game extends Component {
   state = {
     pokemon,
     score: 0,
@@ -74,7 +74,7 @@ class Game extends Component {
         </Navbar>
         <Row>
           <Col>
-            <CardColumn>
+            <Columns>
               {pokemon.map(item => (
                 <Cards key={item.id}>
                   <Img
@@ -85,7 +85,7 @@ class Game extends Component {
                   />
                 </Cards>
               ))}
-            </CardColumn>
+            </Columns>
           </Col>
         </Row>
         <Footer />
@@ -93,5 +93,3 @@ class Game extends Component {
     )
   }
 }
-
-export { Game }

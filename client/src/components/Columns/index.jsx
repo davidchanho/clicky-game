@@ -2,10 +2,8 @@ import React from 'react'
 
 import CardColumns from 'react-bootstrap/CardColumns'
 
-import './CardColumns.css'
+import './styles.scss'
 
-function CardColumn({ children }) {
+export function Columns({ children }) {
 	return <CardColumns className='cardColumns'>{children}</CardColumns>
 }
-
-export { CardColumn }

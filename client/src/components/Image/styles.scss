@@ -1,0 +1,22 @@
+.image {
+  width: 5vw;
+  height: 10vh;
+  padding: 1vh;
+}
+
+// disallows user drag images
+.undraggable {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+// disallows user highlight images
+.unselectable {
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
